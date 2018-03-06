@@ -14,8 +14,15 @@ public class Futbolista extends SeleccionFutbol {
     private String demarcacion;
     
     public Futbolista(){
-        super();
+        super(); //lama al constructor del padre
     }
+
+    public Futbolista(int dorsal, String demarcacion, int id, String nombre, String apellidos, int edad) {
+        super(id, nombre, apellidos, edad);
+        this.dorsal = dorsal;
+        this.demarcacion = demarcacion;
+    }    
+    
     
     public void jugarPartido(){
         

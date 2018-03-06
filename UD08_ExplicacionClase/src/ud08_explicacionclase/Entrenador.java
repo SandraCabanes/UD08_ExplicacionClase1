@@ -15,6 +15,12 @@ public class Entrenador extends SeleccionFutbol{
     public Entrenador(){
         super();
     }
+
+    public Entrenador(String idFederacion, int id, String nombre, String apellidos, int edad) {
+        super(id, nombre, apellidos, edad);
+        this.idFederacion = idFederacion;
+    }
+    
     
     public void dirigirPartido(){
         
